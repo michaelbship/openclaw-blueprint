@@ -1,0 +1,53 @@
+{
+  "mcpServers": {
+    "brave": {
+      "description": "Brave Search MCP",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@brave/brave-search-mcp-server"
+      ],
+      "env": {
+        "BRAVE_API_KEY": "YOUR_BRAVE_API_KEY"
+      },
+      "lifecycle": "keep-alive"
+    },
+    "exa": {
+      "description": "Exa Search MCP",
+      "command": "npx",
+      "args": [
+        "-y",
+        "exa-mcp-server"
+      ],
+      "env": {
+        "EXA_API_KEY": "YOUR_EXA_API_KEY"
+      },
+      "lifecycle": "keep-alive"
+    },
+    "tavily": {
+      "description": "Tavily Search MCP",
+      "command": "npx",
+      "args": [
+        "-y",
+        "tavily-mcp@latest"
+      ],
+      "env": {
+        "TAVILY_API_KEY": "YOUR_TAVILY_API_KEY"
+      },
+      "lifecycle": "keep-alive"
+    },
+    "perplexity": {
+      "description": "Perplexity Synthesis",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@perplexity-ai/mcp-server"
+      ],
+      "env": {
+        "PERPLEXITY_API_KEY": "YOUR_PERPLEXITY_API_KEY"
+      },
+      "lifecycle": "keep-alive"
+    }
+  },
+  "imports": []
+}

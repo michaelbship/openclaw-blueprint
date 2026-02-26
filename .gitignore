@@ -1,0 +1,26 @@
+# Alice's runtime data (generated during setup)
+MEMORY.md
+!workspace/MEMORY.md
+
+# Secrets
+.env*
+secrets/
+*.secret
+
+# OS
+.DS_Store
+*.tmp
+*.log
+
+# OpenClaw runtime (on VPS, not in repo)
+.openclaw/
+.clawdhub/
+canvas/
+
+# Python
+venv/
+__pycache__/
+*.pyc
+
+# Node
+node_modules/
